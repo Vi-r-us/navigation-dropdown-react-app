@@ -1,0 +1,28 @@
+header {
+  max-width: 87.75rem;
+  padding: 1.3125em 1em;
+  gap: 3em;
+  align-items: center;
+  margin-inline: auto;
+
+  > img {
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+}
+main {
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  nav {
+    display: none !important;
+  }
+}
+@media (min-width: 48rem) {
+  aside {
+    display: none;
+  }
+}

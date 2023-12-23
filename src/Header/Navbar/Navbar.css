@@ -1,0 +1,130 @@
+.navbar {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: var(--clr-grey);
+  z-index: 100;
+
+  a {
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.15s;
+    &:hover {
+      color: var(--clr-black);
+    }
+  }
+
+  .links {
+    gap: 1.8em;
+    a {
+      gap: 0.4em;
+    }
+    .link {
+      position: relative;
+
+      .overlay-wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+    }
+  }
+
+  .sub-links {
+    width: max-content;
+    background-color: var(--clr-white);
+    position: absolute;
+    top: 2.5em;
+    padding: 2em;
+    border-radius: 0.75em;
+    transform-origin: top;
+
+    gap: 0.8em;
+    a {
+      gap: 0.8em;
+    }
+
+    -webkit-box-shadow: 10px 6px 44px -7px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 10px 6px 44px -7px rgba(0, 0, 0, 0.54);
+    box-shadow: 10px 6px 44px -7px rgba(0, 0, 0, 0.54);
+  }
+  .sub-links[data-load="first"] {
+    right: 0;
+  }
+  .sub-links[data-load="last"] {
+    left: 0;
+  }
+
+  /* For Open and Close */
+  .hide-sub-links {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    /* transform: scaleY(0);
+    overflow: hidden; */
+  }
+
+  .btn-container {
+    align-items: center;
+    text-align: center;
+    gap: 1.8em;
+
+    .btn-register {
+      width: 100%;
+      text-transform: capitalize;
+      cursor: pointer;
+      background-color: var(--clr-white);
+      color: var(--clr-grey);
+
+      border: 1px solid var(--clr-grey);
+      border-radius: 0.75em;
+      padding: 0.625em 1.375em;
+
+      &:hover {
+        background-color: var(--clr-black);
+        color: var(--clr-white);
+      }
+    }
+  }
+}
+
+@keyframes explode-to-black {
+  0% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    /* background-color: rgba(42, 53, 80, 0.2); */
+    background-color: var(--clr-white);
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: var(--clr-white);
+  }
+}
+
+@keyframes desplode-to-white {
+  0% {
+    width: 400px;
+    height: 400px;
+    margin-left: -200px;
+    margin-top: -200px;
+    background-color: var(--clr-white);
+  }
+  100% {
+    width: 0px;
+    height: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    /* background-color: rgba(129, 80, 108, 0.6); */
+    background-color: var(--clr-black);
+  }
+}

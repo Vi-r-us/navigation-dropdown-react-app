@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+:root {
+  --clr-white: hsl(0, 0%, 98%);
+  --clr-grey: hsl(0, 0%, 41%);
+  --clr-black: hsl(0, 0%, 8%);
+
+  --ff-epilogue: "Epilogue", sans-serif;
+  --fw-500: 500;
+  --fw-700: 700;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Josh's Custom CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  transition: all 0.5s;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  background-color: var(--clr-white);
+  font: var(--fw-500) 1.125rem var(--ff-epilogue);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.flex[direction='col'] {
+  display: flex;
+  flex-direction: column;
+}
+.flex[direction='row'] {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,149 @@
+.menuToggle {
+  position: absolute;
+  right: max(1.4em, 5%);
+  top: 1.3125em;
+  /* top: -100%; */
+  bottom: 100vh;
+
+  background: var(--clr-white);
+  border: none;
+  cursor: pointer;
+  z-index: 11;
+
+  span {
+    /* z-index: 10; */
+    background: var(--clr-black);
+    border-radius: 10px;
+    display: block;
+    height: 3px;
+    margin-bottom: 5px;
+    width: 2.25rem;
+  }
+  span:last-child {
+    margin-bottom: 0px;
+  }
+
+  transition: background-color 0s;
+}
+.menu-toggled {
+  background-color: transparent;
+  position: fixed;
+
+  span {
+    transform-origin: 18%;
+    &:nth-child(1) {
+      transform: rotate(45deg);
+    }
+    &:nth-child(2) {
+      opacity: 0;
+    }
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+.show-overlay {
+  display: block;
+}
+
+.sidebar-container {
+  transform-origin: top right;
+  transform: scale(0);
+  * {
+    opacity: 0;
+  }
+  transition: all 500ms ease-out;
+
+  width: 50vw;
+  background-color: var(--clr-white);
+  font-size: 0.875rem;
+  text-transform: capitalize;
+  color: var(--clr-grey);
+
+  position: fixed;
+  right: 0.5em;
+  top: 0.5em;
+  gap: 2em;
+
+  padding: 4rem 5%;
+  padding-bottom: min(5%, 2em);
+  border-radius: 1.25rem;
+  z-index: 10;
+
+  a {
+    align-items: center;
+    cursor: pointer;
+    gap: 0.8em;
+    &:hover {
+      color: var(--clr-black);
+    }
+  }
+
+  .links {
+    gap: 1.25em;
+  }
+  .link-opened > a > img {
+    transform: rotate(180deg);
+  }
+
+  .sub-links {
+    padding: 1em 1em 0em 1em;
+    gap: 0.8em;
+  }
+  /* For Open and Close */
+  .hide-sub-links {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .btn-container {
+    text-align: center;
+    gap: 0.8em;
+
+    .register {
+      width: 100%;
+      text-transform: capitalize;
+      cursor: pointer;
+      background-color: var(--clr-white);
+      color: var(--clr-grey);
+
+      border: 1px solid var(--clr-grey);
+      border-radius: 1em;
+      padding-block: 10px;
+
+      &:hover {
+        background-color: var(--clr-black);
+        color: var(--clr-white);
+      }
+    }
+  }
+
+  .hidden[direction="false"] {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .hidden[direction="true"] {
+    max-height: 214.4px;
+    opacity: 1;
+  }
+}
+
+.show-sidebar {
+  transform: scale(1);
+  * {
+    opacity: 1;
+  }
+}
