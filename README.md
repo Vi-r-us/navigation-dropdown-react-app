@@ -1,4 +1,4 @@
-# News Homepage Solution
+# Intro section with dropdown navigation
 
 The **Navigation Dropdown App** showcases a modern UI design with an introductory section featuring a dropdown navigation. The project, inspired by a challenge from [FrontendMentors](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5), is responsive across various screen sizes. Leveraging Flexbox and media queries, the design ensures an optimal user experience. Noteworthy features include webkit animations during site loading and the implementation of React Portals to replicate a sidebar modal on mobile or tablet views. Additionally, the navigation hover modal functionality is achieved through JavaScript
 
