@@ -1,6 +1,6 @@
 # News Homepage Solution
 
-This project involves creating a News Homepage Main, featuring a modern-looking UI design that's responsive to all screen sizes. The design and challenge for this project are provided by [Frontend Mentors](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). The project is built using React.js with a proper project structure.
+The **Navigation Dropdown App** showcases a modern UI design with an introductory section featuring a dropdown navigation. The project, inspired by a challenge from [FrontendMentors](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5), is responsive across various screen sizes. Leveraging Flexbox and media queries, the design ensures an optimal user experience. Noteworthy features include webkit animations during site loading and the implementation of React Portals to replicate a sidebar modal on mobile or tablet views. Additionally, the navigation hover modal functionality is achieved through JavaScript
 
 ## Table of contents
 
@@ -20,11 +20,9 @@ This project involves creating a News Homepage Main, featuring a modern-looking 
 
 During the development of this project, I encountered several challenges:
 
-1. **Image Adaptation:** Adapting and displaying different images for both desktop and mobile views while maintaining a responsive design.
-
-2. **Responsive Navbar:** Implementing a responsive navbar with buttons using HTML, CSS, and JavaScript to ensure functionality across all screen sizes.
-
-3. **React.js Structure:** Learning to create a project with React.js and manage it using components in a proper project structure.
+1. **Image Handling:** Addressing challenges associated with the integration of distinct images for desktop and mobile views.
+2. **React Portal:** Overcoming obstacles and learning the nuances of using React Portals to define a modal component within the parent app component.
+3. **Responsive Design:** Ensuring responsiveness across diverse devices and screen sizes using Flexbox and media queries.
 
 ### Screenshot
 
@@ -34,8 +32,8 @@ During the development of this project, I encountered several challenges:
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://github.com/Vi-r-us/News-Homepage-React-Main)
-- Live Site URL: [Deployed on Github pages](https://vi-r-us.github.io/News-Homepage-React-Main/)
+- Solution URL: [GitHub Repository](https://github.com/Vi-r-us/navigation-dropdown-react-app)
+- Live Site URL: [Deployed on Github pages](https://vi-r-us.github.io/navigation-dropdown-react-app/)
 
 ## My process
 
@@ -45,22 +43,21 @@ The project is built using the following technologies, frameworks, and libraries
 
 - React.js
 - HTML5
-- CSS3
+- CSS3 (Flexbox, Media Queries)
 - JavaScript
 
 ### What I learned
 
-Throughout this project, I gained valuable insights and knowledge, including:
-
-- Building responsive designs using a flex layout and media queries.
-- Implementation of subtle animations throughout the project.
-- Properly structuring a React.js project and managing components.
+This project provided valuable learning experiences:
+- Mastery of React Portals and their application for creating responsive sidebar modals.
+- Enhanced proficiency in responsive design through Flexbox and media queries.
+- Practical implementation of webkit animations for a more engaging user interface..
 
 ### Continued development
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -75,7 +72,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `dist` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
